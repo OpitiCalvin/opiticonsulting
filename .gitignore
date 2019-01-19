@@ -110,3 +110,6 @@ opiticonsulting/migrations/
 
 # static files
 static/
+
+
+settings.py
