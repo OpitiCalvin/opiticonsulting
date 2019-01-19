@@ -1,0 +1,106 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+{% block title %}{% trans "About Us" %}{% endblock title %}
+{% load static %}
+  {% block styles %}
+  <link rel="stylesheet" href="{% static 'opiticonsulting/libtools/jquery-ui-1.12.1/jquery-ui.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/css/contact_style.css' %}">
+  <link rel="stylesheet" href="{% static 'opiticonsulting/css/sliders.css' %}" />
+  {% endblock %}
+
+{% block mainContent %}
+<!-- Slideshow / Carousel pane -->
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<img src="{% static 'opiticonsulting/images/gis_mapping.png' %}" style="width:100%; height:400px;">
+		<div class="text">Mapping</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="{% static 'opiticonsulting/images/RemoteSensing.jpg' %}" style="width:100%; height:400px;">
+		<div class="text">GIS and Remote Sensing</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="{% static 'opiticonsulting/images/analysis.jpg' %}" style="width:100%; height:400px;">
+		<div class="text">Spatial Analytics</div>
+	</div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<h2 class="mt-4">About Us</h2>
+			<p>Opiti Consulting is a privately owned startup company offering services in <strong>Spatial Sciences, Information Technology and Engineering </strong>space.</p>
+			<p><i>Consultancy</i>, <i>research</i> and <i>development</i> services we offer at Opiti Consulting, 
+			aim to give a user of our solutions and the client <strong><i>power to make effective and informed decisions</i></strong>. 
+			Our solutions allow for data access and analysis on the go, through integrated and enterprise solutions that are <i>safe and securely accessible via web and mobile platforms</i>.</p>
+			<p>
+				<h4> Our Expertise</h4>
+				<p>Opiti Consulting offers consultancy, research and Development services in GeoInformatics and Remote Sensing.</p>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<h2 class="mt-4">Contact Us</h2>
+			<ul class="contact-info">
+				<li><i class="icon-map"></i> Johannesburg, South Africa
+						<!-- <br>3481 Melrose Place
+						<br>Beverly Hills, CA 90210 -->
+				</li>
+				<li>
+					<i class="icon-phone"></i> (+27)081 062 2237</li>
+				<li>
+					<i class="icon-phone"></i> (+254) 0729 529 209</li>
+				<li>
+					<i class="icon-envelope"></i>
+					<a href="mailto:opiticalvin@gmail.com" target="_blank"> opiticalvin@gmail.com</a></li>
+				<li>
+					<i class="icon-globe"></i>
+					<a href="http://www.opiticonsulting.com" target="_blank"> www.opiticonsulting.com</a></li>
+			</ul>
+			
+			<ul class="social-icons-w3_agile">
+				<li>
+				  <a href="https://www.facebook.com/CALVIN.OPITI" target="_blank" class="fa fa-facebook icon icon-border facebook"> </a>
+				</li>
+				<li>
+				  <a href="https://www.twitter.com/opiti_calvin" target="_blank" class="fa fa-twitter icon icon-border twitter"> </a>
+				</li>
+				<li>
+				  <a href="https://plus.google.com/+Calvinopiti" target="_blank" class="fa fa-google-plus icon icon-border googleplus"> </a>
+				</li>
+				<li>
+				  <a href="https://www.linkedin.com/in/calvin-opiti-48476a55/" target="_blank" class="fa fa-linkedin icon icon-border linkedin"> </a>
+				</li>
+				<li>
+				  <a href="https://github.com/OpitiCalvin" target="_blank" class="fa fa-github icon icon-border github"> </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /.row -->
+
+</div>
+    <!-- /.container -->
+{% endblock mainContent %}
+{% load static %}
+{% block scripts %}
+  <script type="text/javascript" src="{% static 'opiticonsulting/libtools/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'opiticonsulting/js/sliders.js' %}"></script>
+{% endblock scripts %}
