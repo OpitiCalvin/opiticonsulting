@@ -1,0 +1,99 @@
+{% load i18n %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>{% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %} - OPITI Inc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="follow, all" />
+	<meta name="description" content="{% block meta-description %} {% endblock meta-description %}
+	{% block meta-description-page %}{% endblock meta-description-page %}" />
+	<meta name="keywords" content="OPITI Spatial, Opiti Calvin, GIS, Remote Sensing, WebGIS Development, Spatial Analysis {% block meta-keywords %}{% endblock meta-keywords %}" />
+	<meta name="author" content="Calvin Opiti" />
+	{% block meta %}{% endblock meta %}    
+	
+    {% load static %}
+	
+	<!-- content from Zinnia's skeleton.html file -->	
+  
+	<!-- bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/libtools/vendor/bootstrap/css/bootstrap.min.css' %}">
+	
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/css/icomoon.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/css/small-business.css' %}">
+	{% block styles %}{% endblock %}
+	{% block link %}{% endblock link %}
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="{% static 'opiticonsulting/images/globe.ico' %}">
+  
+  
+	{% block script %}{% endblock script %}
+</head>
+
+<!-- <body style="background-color:#dce2ed;"> -->
+<body class="zinnia {% block theme-class %} dark{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+        	<a class="navbar-brand" href="{% url 'opitInc:index' %}">OPITI CONSULTING</a>
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          		<span class="navbar-toggle-icon"></span>
+        	</button>
+        	<div class="collapse navbar-collapse" id="navbarResponsive">
+          		<ul class="navbar-nav ml-auto">
+            		<li class="nav-item">
+              			<a class="nav-link" href="{% url 'opitInc:index' %}">Home
+                			<span class="sr-only">(current)</span>
+              			</a>
+            		</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'opitInc:services' %}">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'opitInc:demos' %}">Demos</a>
+					</li>
+					<li class="nav-item">
+						<!-- <a class="nav-link" href="http://opiticonsulting.com/blog/">Blog</a> -->
+						<a class="nav-link" href="/blog/">Blog</a>
+					</li>
+					<li class="nav-item dropdown ">
+		              	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">About<b class="caret"></b></a>
+						<ul class="dropdown-menu bg-dark">
+						  <li class="nav-item"><a class="nav-link" href="{% url 'opitInc:aboutUs' %}">About Us</a></li>
+						  <li class="nav-item"><a class="nav-link" href="{% url 'opitInc:aboutFounder' %}">Founder &amp; CEO</a></li>
+						</ul>
+		            </li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'opitInc:contact' %}">Contact</a>
+					</li>
+		        </ul>
+        	</div>
+      	</div>
+    </nav>
+
+    {% block mainContent %}        
+    {% endblock mainContent %}
+    
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      	<div class="container">
+        	<p class="m-0 text-center text-white">&copy; <a href="{% url 'opitInc:index' %}">Opiti Consulting</a> <script type="text/javascript">document.write(new Date().getFullYear());</script> {% block footerInfo %}{% endblock footerInfo %}</p>
+      	</div>
+      	<!-- /.container -->
+    </footer>
+
+    {% load static %}
+    <!-- Bootstrap core JavaScript -->
+	
+    <script src="{% static 'opiticonsulting/libtools/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'opiticonsulting/libtools/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    {% block scripts %}{% endblock scripts %}
+
+</body>
+</html>

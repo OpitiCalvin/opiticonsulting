@@ -1,0 +1,134 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+{% block title %}{% trans "Home Page" %}{% endblock title %}
+
+{% block meta-description %}A consultancy company offering services in GIS, Remote Sensing, Spatial &amp; Statistical Analysis, WebGIS Applications Development, Spatial Database Design, Development &amp; Administration and GIS-based Research and Development. {% endblock meta-description %}
+
+{% load static %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'opiticonsulting/libtools/jquery-ui-1.12.1/jquery-ui.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/css/contact_style.css' %}">
+{% endblock %}
+
+{% block mainContent %}
+<!-- Header with Background Image -->
+    <header class="business-header">
+      	<div class="container">
+        	<div class="row">
+          	<div class="col-lg-12 col-md-12 col-sm-12">
+              <h1 class="text-center text-white mt-4" style="font-size:8vw;"> OPITI CONSULTING </h1>
+          	</div>
+        	</div>
+      	</div>
+    </header>
+	
+	<!-- Page Content -->
+    <div class="container">
+
+      	<div class="row">
+        	<div class="col-sm-8">
+          		<h2 class="mt-4">What We Do</h2>
+          		<p>At Opiti Consulting, we offer <i>consultancy</i>, <i>research</i> and <i>development</i> services in the spatial sciences and ICT domains, encompassing Geographic Information Systems (<strong>GIS</strong>), Remote Sensing (<strong>RS</strong>) and Spatial Analytics.</p>
+          		<p>We aim to give our users and clients the <strong><i>power to make informed decisions</i></strong> through undertaking of spatial and statistical analysis, taking into account geographically referenced location-based data and information. We intend to achieve this by provision of integrated and enterprise solutions and services that are <i>safely and securely accessible via web and mobile platforms</i>.</p>
+          		<p>
+            		<a class="btn btn-primary btn-lg" href="{% url 'opitInc:contact' %}">Contact us today for more info &raquo;</a>
+          		</p>
+        	</div>
+	        <div class="col-sm-4">
+	          	<h2 class="mt-4">Contact Us</h2>
+				<ul class="contact-info">
+					<li><i class="icon-map"></i> Johannesburg, South Africa
+							<!-- <br>3481 Melrose Place
+							<br>Beverly Hills, CA 90210 -->
+					</li>
+					<li>
+						<i class="icon-phone"></i> (+27) 081 062 2237</li>
+					<li>
+						<i class="icon-phone"></i> (+254) 0729 529 209</li>
+					<li>
+						<i class="icon-envelope"></i>
+						<a href="mailto:opiticalvin@gmail.com" target="_blank"> opiticalvin@gmail.com</a></li>
+					<li>
+						<i class="icon-globe"></i>
+						<a href="http://www.opiticonsulting.com" target="_blank"> www.opiticonsulting.com</a></li>
+				</ul>
+	          	
+              <ul class="social-icons-w3_agile">
+                <li>
+                  <a href="https://www.facebook.com/CALVIN.OPITI" target="_blank" class="fa fa-facebook icon icon-border facebook"> </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/opiti_calvin" target="_blank" class="fa fa-twitter icon icon-border twitter"> </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/+Calvinopiti" target="_blank" class="fa fa-google-plus icon icon-border googleplus"> </a>
+                </li>
+				        <li>
+                  <a href="https://www.linkedin.com/in/calvin-opiti-48476a55/" target="_blank" class="fa fa-linkedin icon icon-border linkedin"> </a>
+                </li>
+				        <li>
+                  <a href="https://github.com/OpitiCalvin" target="_blank" class="fa fa-github icon icon-border github"> </a>
+                </li>
+              </ul>
+	        </div>
+    	</div>
+      	<!-- /.row -->
+
+      	<div class="row">
+          <div class="col-lg-12 col-sm-12">
+              <h2 class="mt-4">Services and Expertise</h2>
+          </div>
+        	<div class="col-sm-4 my-4">
+          		<div class="card">
+            		<img class="card-img-top" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="">
+            			<div class="card-body">
+              				<h4 class="card-title">Spatial Analytics</h4>
+              				<p class="card-text">Geographic Information Systems (GIS), Remote Sensing, Spatial and Statistical data analysis.</p>
+            			</div>
+            			<div class="card-footer">
+              				<a href="#" class="btn btn-primary">Find Out More!</a>
+            			</div>
+
+          		</div>
+        	</div>
+        	<div class="col-sm-4 my-4">
+          		<div class="card">
+            		<img class="card-img-top" src="{% static 'opiticonsulting/images/databases.jpg' %}" alt="">
+            			<div class="card-body">
+              				<h4 class="card-title">Spatial Databases</h4>
+              				<p class="card-text">Design, development and management of spatial database systems for integrated and enterprise GIS applications.</p>
+            			</div>
+            			<div class="card-footer">
+              				<a href="#" class="btn btn-primary">Find Out More!</a>
+            			</div>
+
+          		</div>
+        	</div>
+        	<div class="col-sm-4 my-4">
+          		<div class="card">
+            		<img class="card-img-top" src="{% static 'opiticonsulting/images/webGIS.jpg' %}" alt="">
+            			<div class="card-body">
+              				<h4 class="card-title">Enterprise WebGIS</h4>
+              				<p class="card-text">Development of data and net-centric GIS and Remote Sensing applications, facilitating spatial data &amp; informations sharing, within an enterprise.</p>
+            			</div>
+			            <div class="card-footer">
+			              	<a href="#" class="btn btn-primary">Find Out More!</a>
+			            </div>
+
+          		</div>
+        	</div>
+
+      	</div>
+      	<!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  {% endblock mainContent %}
+  {% load static %}
+{% block scripts %}
+  <script type="text/javascript" src="{% static 'opiticonsulting/libtools/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script><!-- 
+  <script type="text/javascript" src="{% static 'opiticonsulting/js/DOMLoads.js' %}"></script>
+  <script type="text/javascript">
+    loadDOMs('homePage');
+  </script> -->
+{% endblock scripts %}
