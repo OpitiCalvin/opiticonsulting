@@ -23,6 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'wcy^t5*u=ca-v*2qxb42)61p2mwb%0i6hfn9m-1w-l)$7ge!*d')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = False
 #DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
@@ -158,4 +159,3 @@ SITE_ID = 1
 #    'django.contrib.staticfiles.finders.FileSystemFinder',
 #    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #)
-

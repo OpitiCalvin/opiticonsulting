@@ -95,12 +95,26 @@ table {
   .zinnia ul, .zinnia ol {
     margin: 0 1.5em 1.5em 0;
     padding-left: 1.5em; }
+<<<<<<< HEAD
   .zinnia ul {
     list-style-type: disc; }
   .zinnia ol {
     list-style-type: decimal; }
   .zinnia li {
     list-style-image: url("../img/bullet.png"); }
+=======
+   /* .zinnia ul, .zinnia ol {
+    margin: 0;
+    padding: 0; }*/
+  .zinnia ul {
+    /*list-style-type: disc; }*/
+    list-style-type: none; }
+  .zinnia ol {
+    list-style-type: decimal; }
+    /*list-style-type: none; }*/
+  /*.zinnia li {
+    list-style-image: url("../img/bullet.png"); }*/
+>>>>>>> 5bda11ab405cc51c556a82fdd92953ddce5676eb
   .zinnia dl {
     margin: 0 0 1.5em 0; }
     .zinnia dl dt {

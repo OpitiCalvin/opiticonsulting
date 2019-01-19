@@ -7,7 +7,7 @@
     {% block meta %}{% endblock meta %}
     {% block styles %}
     <link rel="pingback" href="/xmlrpc/" />
-  <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
+    <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
     <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "zinnia/theme/css/screen.css" %}" />
     <link rel="stylesheet" type="text/css" media="print" href="{% static "zinnia/theme/css/print.css" %}" />
     <!--[if lt IE 8]>
@@ -88,3 +88,4 @@
     {% block footerInfo %}
 	{% blocktrans %}| Powered by <a href="http://www.djangoproject.com" target="_blank">Django</a> and <a href="https://github.com/Fantomas42/django-blog-zinnia" target="_blank">Zinnia {{ ZINNIA_VERSION }}</a>.{% endblocktrans %}
     {% endblock footerInfo %}
+

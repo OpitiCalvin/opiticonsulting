@@ -17,7 +17,11 @@ class ContactForm(forms.Form):
         max_length=15,
         widget=forms.TextInput(
             attrs={
+<<<<<<< HEAD
                 'placeholder':"Eg. +1 800 000000",
+=======
+                'placeholder':"+27 012 345 6789",
+>>>>>>> 5bda11ab405cc51c556a82fdd92953ddce5676eb
                 'name':"phone",
                 'class':"input100"
                 }),
@@ -27,7 +31,11 @@ class ContactForm(forms.Form):
         max_length=25,
         widget=forms.EmailInput(
             attrs={
+<<<<<<< HEAD
                 'placeholder':"Eg. example@email.com",
+=======
+                'placeholder':"example@email.com",
+>>>>>>> 5bda11ab405cc51c556a82fdd92953ddce5676eb
                 'name':"email",
                 'class':"input100"
                 }),

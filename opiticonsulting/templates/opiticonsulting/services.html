@@ -19,28 +19,144 @@
 	<div class="row">
 		<h2 class="mt-4">Our Services</h2>
 	</div>
-	<div class="row">
+   <hr/>
+  <!-- Left side image -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
+        
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">GIS and Remote Sensing</h4>
+        <p class="services-text">Service description goes here</p>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <!-- Right Side image -->
+  <div class="row">
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">Spatial Analytics</h4>
+        <p class="services-text"><strong><i>"Everything is related to everything else, but near things are more related"</i> - Waldo R. Tobler</strong></p>
+
+        <p>Make sense of you data - business, social, etc - through its analysis and determination of its characteristincs and relationships with reference to space or geography.</p>
+
+          <p>At Opiti Consulting, we apply the requisite exploratory spatial data and spatial analysis tools and algorithms, such as spatial dependence, spatial autocorrelaton, Inverse Distance Weighting, Kriging, Geographic Weighted Regression (to name a few), through available tools and software - ESRI's ArcGIS, QGIS, GeoDa, Python and R - to provide an indepth insight to data and its relationship and distribution in space.</p>
+          <!-- <p>Do explore the following examples</p> -->
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
+        
+    </div>
+  </div>
+  <hr/>
+  <!-- Left side image -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
+        
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">Data Science and Analysis</h4>
+        <p class="services-text">Service description goes here</p>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <!-- Right Side image -->
+  <div class="row">
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">Programming and Solution Development</h4>
+        <p class="services-text">Service description goes here</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
+        
+    </div>
+  </div>
+  <hr/>
+  <!-- Left side image -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
+        
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">Database Development and Administration</h4>
+        <p class="services-text">Service description goes here</p>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <!-- Right Side image -->
+  <div class="row">
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">Research and Development</h4>
+        <p class="services-text">Service description goes here</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/research.jpg' %}" alt="" style="">
+        
+    </div>
+  </div>
+  <hr/>
+  <!-- Left side image -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="card"> -->
+        <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
+        
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-6">
+      <div class="services-body">
+        <h4 class="services-title">Training</h4>
+        <p class="services-text">Service description goes here</p>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <!-- </div> -->
+  <div>
+    <p class="text-center"><a class="btn btn-primary btn-lg" href="{% url 'opitInc:contact' %}">Contact us today for more info &raquo;</a>            </p>
+  </div>
+
+<!-- 	<div class="row">
 		{% if serv %}
 		{% for item in serv %}
 		<div class="col-sm-4 my-4">
           	<div class="card">
-            	<!-- <img class="card-img-top" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="width:300px;height:200px;"> -->
 				<img class="card-img-top" src="{{item.thumbnail.url }}" alt="">
 				<hr/>
             	<div class="card-body">
               		<h4 class="card-title">{{ item.title }}</h4>
               		<p class="card-text">{{ item.brief }}</p>
             	</div>
-            	<!-- <div class="card-footer"> -->
-              		<!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
-            	<!-- </div> -->
+            	<div class="card-footer">
+              		<a href="#" class="btn btn-primary">Find Out More!</a>
+            	</div>
           	</div>
         </div>
 		{% endfor %}		
 		{% else %}
 		<p> No services available yet. </p>
 		{% endif %}
-	</div>
+	</div> -->
 </div>
 {% endblock mainContent %}
 {% load static %}
@@ -55,3 +171,4 @@
     });
 </script> -->
 {% endblock scripts %}
+

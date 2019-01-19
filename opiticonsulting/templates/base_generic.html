@@ -7,8 +7,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="follow, all" />
-	<meta name="description" content="{% block meta-description %} {% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
-	<meta name="keywords" content="{% block meta-keywords %}OPITI Spatial, Opiti Calvin, GIS, Remote Sensing, WebGIS Development, Spatial Analysis{% endblock meta-keywords %}" />
+	<meta name="description" content="{% block meta-description %} {% endblock meta-description %}
+	{% block meta-description-page %}{% endblock meta-description-page %}" />
+	<meta name="keywords" content="OPITI Spatial, Opiti Calvin, GIS, Remote Sensing, WebGIS Development, Spatial Analysis {% block meta-keywords %}{% endblock meta-keywords %}" />
 	<meta name="author" content="Calvin Opiti" />
 	{% block meta %}{% endblock meta %}    
 	
@@ -17,7 +18,7 @@
 	<!-- content from Zinnia's skeleton.html file -->	
   
 	<!-- bootstrap core CSS -->
-	<link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/libtools/vendor//bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/libtools/vendor/bootstrap/css/bootstrap.min.css' %}">
 	
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/css/icomoon.css' %}">
@@ -57,7 +58,8 @@
 						<a class="nav-link" href="{% url 'opitInc:demos' %}">Demos</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="http://opiticonsulting.com/blog/">Blog</a>
+						<!-- <a class="nav-link" href="http://opiticonsulting.com/blog/">Blog</a> -->
+						<a class="nav-link" href="/blog/">Blog</a>
 					</li>
 					<li class="nav-item dropdown ">
 		              	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">About<b class="caret"></b></a>
@@ -95,3 +97,4 @@
 
 </body>
 </html>
+

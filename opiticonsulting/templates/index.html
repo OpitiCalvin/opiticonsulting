@@ -1,21 +1,23 @@
 {% extends "base_generic.html" %}
 {% load i18n %}
 {% block title %}{% trans "Home Page" %}{% endblock title %}
+
+{% block meta-description %}A consultancy company offering services in GIS, Remote Sensing, Spatial &amp; Statistical Analysis, WebGIS Applications Development, Spatial Database Design, Development &amp; Administration and GIS-based Research and Development. {% endblock meta-description %}
+
 {% load static %}
-  {% block styles %}
+{% block styles %}
   <link rel="stylesheet" href="{% static 'opiticonsulting/libtools/jquery-ui-1.12.1/jquery-ui.min.css' %}" />
   <link rel="stylesheet" type="text/css" href="{% static 'opiticonsulting/css/contact_style.css' %}">
-  {% endblock %}
+{% endblock %}
 
 {% block mainContent %}
 <!-- Header with Background Image -->
     <header class="business-header">
       	<div class="container">
         	<div class="row">
-          		<div class="col-lg-12 col-md-12 col-sm-12">
-<!--            		<h1 class="display-3 text-center text-white mt-4">OPITI CONSULTING</h1> -->
-			<h1 class="text-center text-white mt-4" style="font-size:8vw;"> OPITI CONSULTING </h1>
-          		</div>
+          	<div class="col-lg-12 col-md-12 col-sm-12">
+              <h1 class="text-center text-white mt-4" style="font-size:8vw;"> OPITI CONSULTING </h1>
+          	</div>
         	</div>
       	</div>
     </header>
@@ -26,8 +28,8 @@
       	<div class="row">
         	<div class="col-sm-8">
           		<h2 class="mt-4">What We Do</h2>
-          		<p>We offer <i>consultancy</i>, <i>research</i> and <i>development</i> services in the spatial sciences and ICT domains, encompassing Geographic Information Systems (<strong>GIS</strong>), Remote Sensing (<strong>RS</strong>) and Spatial Analytics.</p>
-          		<p>We aim to give the user and client the <strong><i>power to make informed decisions</i></strong> from undertaking spatial analysis, taking into account geographically referenced location-based information, through integrated and enterprise solutions that are <i>safe and securely accessible via web and mobile platforms</i>.</p>
+          		<p>At Opiti Consulting, we offer <i>consultancy</i>, <i>research</i> and <i>development</i> services in the spatial sciences and ICT domains, encompassing Geographic Information Systems (<strong>GIS</strong>), Remote Sensing (<strong>RS</strong>) and Spatial Analytics.</p>
+          		<p>We aim to give our users and clients the <strong><i>power to make informed decisions</i></strong> through undertaking of spatial and statistical analysis, taking into account geographically referenced location-based data and information. We intend to achieve this by provision of integrated and enterprise solutions and services that are <i>safely and securely accessible via web and mobile platforms</i>.</p>
           		<p>
             		<a class="btn btn-primary btn-lg" href="{% url 'opitInc:contact' %}">Contact us today for more info &raquo;</a>
           		</p>
@@ -40,7 +42,7 @@
 							<br>Beverly Hills, CA 90210 -->
 					</li>
 					<li>
-						<i class="icon-phone"></i> (+27)081 062 2237</li>
+						<i class="icon-phone"></i> (+27) 081 062 2237</li>
 					<li>
 						<i class="icon-phone"></i> (+254) 0729 529 209</li>
 					<li>
@@ -61,10 +63,10 @@
                 <li>
                   <a href="https://plus.google.com/+Calvinopiti" target="_blank" class="fa fa-google-plus icon icon-border googleplus"> </a>
                 </li>
-				<li>
+				        <li>
                   <a href="https://www.linkedin.com/in/calvin-opiti-48476a55/" target="_blank" class="fa fa-linkedin icon icon-border linkedin"> </a>
                 </li>
-				<li>
+				        <li>
                   <a href="https://github.com/OpitiCalvin" target="_blank" class="fa fa-github icon icon-border github"> </a>
                 </li>
               </ul>
@@ -73,6 +75,9 @@
       	<!-- /.row -->
 
       	<div class="row">
+          <div class="col-lg-12 col-sm-12">
+              <h2 class="mt-4">Services and Expertise</h2>
+          </div>
         	<div class="col-sm-4 my-4">
           		<div class="card">
             		<img class="card-img-top" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="">
@@ -127,3 +132,4 @@
     loadDOMs('homePage');
   </script> -->
 {% endblock scripts %}
+
