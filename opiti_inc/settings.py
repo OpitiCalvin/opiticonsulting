@@ -23,15 +23,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'wcy^t5*u=ca-v*2qxb42)61p2mwb%0i6hfn9m-1w-l)$7ge!*d')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['*']
+DEBUG = False
+#DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+
+ALLOWED_HOSTS = ['opiticonsulting.com','www.opiticonsulting.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'opiticonsulting.apps.OpiticonsultingConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'opiticonsulting.apps.OpiticonsultingConfig',
     'zinnia',
     'django_comments',
     'mptt',
@@ -149,13 +150,12 @@ STATICFILES_DIR = (
 
 # Location for media storage
 MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 SITE_ID = 1
 
 
-# STATICFILES_FINDERS = (
+#STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.FileSystemFinder',
 #    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-# )
-
+#)
