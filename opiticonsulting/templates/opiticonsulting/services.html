@@ -25,12 +25,16 @@
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
-        
+
     </div>
     <div class="col-lg-8 col-md-6 col-sm-6">
       <div class="services-body">
         <h4 class="services-title">GIS and Remote Sensing</h4>
-        <p class="services-text">Service description goes here</p>
+        <p class="services-text">"A map is worth more than a thousand words."</p>
+        <p class="services-text">We help collect, organise and manage your spatial/geographic data, attibute information and related information
+        in the form of easy to understand and interpret maps.
+      From field collected data to information extraction from satellite imagery, our services are tailored towards efficient and effective data management and extraction,
+    with detailed metadata capture, enabling use in raw and post-processed forms.</p>
       </div>
     </div>
   </div>
@@ -52,7 +56,7 @@
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
-        
+
     </div>
   </div>
   <hr/>
@@ -61,12 +65,16 @@
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
-        
+
     </div>
     <div class="col-lg-8 col-md-6 col-sm-6">
       <div class="services-body">
         <h4 class="services-title">Data Science and Analysis</h4>
-        <p class="services-text">Service description goes here</p>
+        <p class="services-text">"No data is useless. It might seem so today, but in the long run or the future, it will be your most valuable asset."</p>
+        <p>Our data science and analytics services involves the analysis of your historical and geo-enriched datasets to make predictions about the future.
+        The ability to determine business, consumer, market etc trends is critical in re-aligning an enterprise towards success.</p>
+        <p>Big data, IoT, data mining and machine/data learning are the technologies of the inteconnected future. We offer these services as we also provide technical know-how,
+           infrastructure and tools to facilitate your productivity and efficiency in you operations.</p>
       </div>
     </div>
   </div>
@@ -76,13 +84,16 @@
     <div class="col-lg-8 col-md-6 col-sm-6">
       <div class="services-body">
         <h4 class="services-title">Programming and Solution Development</h4>
-        <p class="services-text">Service description goes here</p>
+        <p class="services-text">Our solutions and services are geared towards enterprises and resource sharing. We do these and more through development
+        of web-based and mobile solutions that are accessible both off-line and online. This allows you to access your data, analyse and make informed decisions
+      while either in the office or out in the field with no data/internet connection.</p>
+      <p>We develop our solutions to cater for interoperability between a variety of platforms - windows or linux, proprietary or open-source, IE/Edge or Chrome and other web browsers and even mobile or PC platforms.</p>
       </div>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
-        
+
     </div>
   </div>
   <hr/>
@@ -91,12 +102,22 @@
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
-        
+
     </div>
     <div class="col-lg-8 col-md-6 col-sm-6">
       <div class="services-body">
         <h4 class="services-title">Database Development and Administration</h4>
-        <p class="services-text">Service description goes here</p>
+        <p class="services-text">In alignment with development of our enterprise solutions, we also offers services
+        that include:
+        <ul>
+          <li>database design,</li>
+          <li>schema development,</li>
+          <li>database implementation</li>
+          <li>database administration</li>
+          <li>data replication, archiving and recovery</li>
+          <li>User profiles management - user roles, rights and restrictions</li>
+        </ul>
+        </p>
       </div>
     </div>
   </div>
@@ -106,13 +127,16 @@
     <div class="col-lg-8 col-md-6 col-sm-6">
       <div class="services-body">
         <h4 class="services-title">Research and Development</h4>
-        <p class="services-text">Service description goes here</p>
+        <p class="services-text">SWe aim to keep up with the current market and technological advancements and trends. We do so
+        through our continued R&D services from our technical and market smart team.</p>
+        <p>We also offer our technical and infrastructure resources to be outsourced by institutions for their Reserch and Development
+        Services, with a guarantee on professionalism and data security.</p>
       </div>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/research.jpg' %}" alt="" style="">
-        
+
     </div>
   </div>
   <hr/>
@@ -121,12 +145,14 @@
     <div class="col-lg-4 col-md-6 col-sm-6">
       <!-- <div class="card"> -->
         <img class="service-img-left" src="{% static 'opiticonsulting/images/geog.jpg' %}" alt="" style="">
-        
+
     </div>
     <div class="col-lg-8 col-md-6 col-sm-6">
       <div class="services-body">
         <h4 class="services-title">Training</h4>
-        <p class="services-text">Service description goes here</p>
+        <p class="services-text">We also aim to collaborate with training institutions - colleges and universities - to offer
+        industry-specific training, in the fields of GIS, Remote Sensing, spatial Analytics and Data Science.</p>
+        <p>We believe in passing down as much knowledge and information to our future generations, as we look to building not just oneself but the entire globe.</p>
       </div>
     </div>
   </div>
@@ -152,7 +178,7 @@
             	</div>
           	</div>
         </div>
-		{% endfor %}		
+		{% endfor %}
 		{% else %}
 		<p> No services available yet. </p>
 		{% endif %}
@@ -171,4 +197,3 @@
     });
 </script> -->
 {% endblock scripts %}
-
