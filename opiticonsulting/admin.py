@@ -3,6 +3,17 @@ from .models import Demo, Service, Contact
 
 # Register your models here.
 
-admin.site.register(Demo)
-admin.site.register(Service)
-admin.site.register(Contact)
+@admin.site.register(Demo)
+class DemoAdmin(admin.ModelAdmin):
+	list_display = ('title','link')
+
+
+@admin.site.register(Service)
+class ServiceAdmin(admin.ModelAdmin):
+	list_display = ('title','link')
+
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'email','country','title')
+    search_fields = ['name','title']
