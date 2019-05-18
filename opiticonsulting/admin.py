@@ -3,12 +3,12 @@ from .models import Demo, Service, Contact
 
 # Register your models here.
 
-@admin.site.register(Demo)
+@admin.register(Demo)
 class DemoAdmin(admin.ModelAdmin):
 	list_display = ('title','link')
 
 
-@admin.site.register(Service)
+@admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
 	list_display = ('title','link')
 
